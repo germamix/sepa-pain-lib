@@ -5,7 +5,9 @@ Mit der Bibliothek kann man die SEPA PAIN Formate für Überweisung und Lastschr
 Lesen:
 <code>
 InputStream is = new FileInputStream("x.xml");
-// Gelesen wird mit dem AutoReader		
+
+// Gelesen wird mit dem AutoReader	
+
 SEPAAutoReader ar = new SEPAAutoReader();
 
 SEPAMessage sm = ar.parse(is);
