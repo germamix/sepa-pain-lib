@@ -9,7 +9,6 @@ InputStream is = new FileInputStream("x.xml");
 SEPAAutoReader ar = new SEPAAutoReader();
 
 SEPAMessage sm = ar.parse(is);
-```
 
 // Die Sepa-Nachricht steht jetzt zur Verfügung
 if (sm.hasCreditTransaction()) {
@@ -18,8 +17,9 @@ if (sm.hasCreditTransaction()) {
 if (sm.hasDebitTransaction()) {
 	System.out.println("Es handelt sich um Lastschrift!");
 }
-
+```
 Schreiben:
+```java
 SEPAMessage sm = new SEPAMessage();
 		
 // Debitor Daten (es können mehrere Debitoren pro SEPA Nachricht sein)
@@ -62,3 +62,4 @@ SEPAMessage sm = new SEPAMessage();
 		baos = (ByteArrayOutputStream) sw.export(sm);
 		
 		System.out.println(baos.toString());
+```
