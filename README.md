@@ -1,6 +1,7 @@
-# sepa-pain-lib
-SEPA pain Library
-Mit der Bibliothek kann man die SEPA PAIN Formate für Überweisung und Lastschrift lesen und erstellen.
+
+SEPA pain Library.
+
+Mit der Bibliothek kann man sehr einfach die SEPA PAIN Formate für Überweisung und Lastschrift lesen und erstellen.
  
 Lesen:
 ```java
