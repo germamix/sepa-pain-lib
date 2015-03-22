@@ -3,11 +3,13 @@ SEPA pain Library
 Mit der Bibliothek kann man die SEPA PAIN Formate für Überweisung und Lastschrift lesen und erstellen.
  
 Lesen:
+<code>
 InputStream is = new FileInputStream("x.xml");
 // Gelesen wird mit dem AutoReader		
 SEPAAutoReader ar = new SEPAAutoReader();
 
 SEPAMessage sm = ar.parse(is);
+</code>
 
 // Die Sepa-Nachricht steht jetzt zur Verfügung
 if (sm.hasCreditTransaction()) {
